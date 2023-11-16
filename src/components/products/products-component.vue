@@ -1,9 +1,9 @@
 <template>
   <div class="container mx-auto">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center">
-      <!-- Tarjetas de productos -->
+   
       <div v-for="product in products" :key="product.producto_id" class="bg-gradient-to-br from-teal-100 to-teal-300 p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 relative mx-2 my-2">
-        <!-- Agregado: SweetAlert2 para "Ver Detalles" -->
+      
         <button @click="showDetails(product)" class="absolute top-2 right-2 bg-teal-500 text-white py-1 px-2 rounded-full hover:bg-teal-600">
           Ver Detalles
         </button>
@@ -66,7 +66,7 @@ export default {
         confirmButtonText: "OK",
       });
     },
-    // Método modificado para utilizar SweetAlert2
+
     showDetails(product) {
       Swal.fire({
         title: product.nombre,

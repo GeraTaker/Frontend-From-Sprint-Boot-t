@@ -118,7 +118,7 @@
         </div>
       </div>
 
-      <!-- Muestra la hora actual con animación -->
+->
       <p class="text-white animate__animated animate__fadeIn animate__delay-1s">
         {{ currentTime }}
       </p>
@@ -145,5 +145,5 @@ export default {
 </script>
 
 <style>
-/* Estilos globales si es necesario */
+
 </style>
